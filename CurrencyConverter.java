@@ -1,5 +1,6 @@
 /* CurrencyConverter.java: A servlet to convert dollars to euros */
 /* compile with -classpath <CATALINA_HOME>\common\lib\servlet-api.jar */
+package com.example;
 import java.io.*;
 import java.util.*;
 import java.text.*;
@@ -18,10 +19,12 @@ public class CurrencyConverter extends HttpServlet {
            	out.println("<body>");
 						String test = req.getParameter("Sub");
 						if ("?".equals(test)) {
-							res.sendRedirect(getServletContext().getInitParameter("myurl"));
+							Myurl urlred = (Myurl) getServletContext().getAttribute("newmyurl");
+							res.sendRedirect(urlred.getmyurl());
 						}
 						else if ("!".equals(test)) {
-							res.sendRedirect(getServletContext().getInitParameter("mytxt"));
+							Myurl txtred = (Myurl) getServletContext().getAttribute("newmytxt");
+							res.sendRedirect(txtred.getmyurl());
 						}
 						else {
 						

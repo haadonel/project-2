@@ -1,4 +1,5 @@
-Στον tomcat δούλεψα μέσα στo φάκελο /webapps/examples.
-Το αρχείο html πρέπει να τοποθετηθεί στο /webapps/examples.
-To αρχείο java πρέπει να γίνει compile και το αρχείο class να τοποθετηθεί στο /webapps/examples/WEB-INF/classes.
-Το αρχείο xml πρέπει να τοποθετηθεί στο webapps/examples/WEB-INF.
+Στον tomcat δούλεψα μέσα στo φάκελο /webapps/myapp.
+Το αρχείο html πρέπει να τοποθετηθεί στο /webapps/myapp.
+Tα αρχεία java πρέπει να γίνουν compile και τα αρχεία class να τοποθετηθούν στο /webapps/examples/WEB-INF/classes/com/example.
+Το αρχείο xml πρέπει να τοποθετηθεί στο webapps/myapp/WEB-INF.
+
